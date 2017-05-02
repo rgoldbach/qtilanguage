@@ -13,14 +13,9 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-                $('linkedin-images').slick();
-        });
-    </script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
 </head>
 <body>
 <div id="page-wrapper">
@@ -54,12 +49,13 @@
                     </header>
 
                     <div class="linkedin-images">
-                        <div><img src="images/pic01.jpg"></div>
-                        <div><img src="images/pic02.jpg"></div>
-                        <div><img src="images/pic03.jpg"></div>
-                        <div><img src="images/pic04.jpg"></div>
-                        <div><img src="images/pic05.jpg"></div>
+                        <div><img height="300px" src="images/pic01.jpg"></div>
+                        <div><img height="300px" src="images/pic02.jpg"></div>
+                        <div><img height="300px" src="images/pic03.jpg"></div>
+                        <div><img height="300px" src="images/pic04.jpg"></div>
+                        <div><img height="300px" src="images/pic05.jpg"></div>
                     </div>
+                    <br>
 
                     <p>We are a professional Chinese (Mandarin) translation and interpretation agency based in New York City. Our interpreting service includes simultaneous and consecutive interpretation for business meetings, training sessions, conferences or one on one service. </p>
                     <p>Chinese (Mandarin) is a widely known language in the world. It is the only official language used in China, Taiwan and Singapore. As China and US have entered another era of working together in many industries, the need of a better communication is increasing dramatically. Our interpreters have been active language providers in New York City. We have provided interpretation services in courts, law firms and communities. We are are native Mandarin, Cantonese, Fukienese speakers. Many of us have had college education in China and master degrees in the US. Our life experience in both China and the US is an asset and added value our clients. We are not only providing language service, but also cultural communication. We are capable of providing services to high-profile government officials, large corporations and private clients.</p>
@@ -135,6 +131,18 @@
 <script src="assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/main.js"></script>
-
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".linkedin-images").slick({
+            centerMode: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            infinite: true,
+            slidesToShow: 1,
+            variableWidth: true
+        });
+    });
+</script>
 </body>
 </html>
