@@ -63,30 +63,31 @@
             <div class="row">
                 <section class="12u 12u(narrower)">
                     <h3>Get a Quote</h3>
-                    <form id="quote-form" action="#" method="post" enctype="text/plain">
+                    <form id="quote-form" action="https://formspree.io/contact@qtilanguage.com" method="post">
                         <div class="row 50%">
                             <div class="6u 12u(mobilep)">
                                 <input type="text" name="name" id="name" placeholder="Name" />
                             </div>
                             <div class="6u 12u(mobilep)">
-                                <input type="email" name="email" id="email" placeholder="Email" />
+                                <input type="email" name="_replyto" id="email" placeholder="Email" />
                             </div>
                         </div>
                         <div class="row 50%">
                             <div class="12u">
-                                <b><input type="radio" name="requirement" value="translation" checked> I need a translation</b><br/>
-                                <b><input type="radio" name="requirement" value="interpreter"> I need an interpreter<br></b>
+                                <b><input name="translation" type="radio" name="requirement" value="translation" checked> I need a translation</b><br/>
+                                <b><input name="interpreter" type="radio" name="requirement" value="interpreter"> I need an interpreter<br></b>
                             </div>
                         </div>
                         <div class="row 50%">
                             <div class="12u">
                                 <textarea name="message" id="message" placeholder="Briefly describe your requirements" rows="5"></textarea>
+                                <input type="text" name="_gotcha" style="display:none" />
                             </div>
                         </div>
                         <div class="row 50%">
                             <div class="12u">
                                 <ul class="actions">
-                                    <li><input type="submit" class="button alt" value="Send Inquiry" /></li>
+                                    <li><input type="submit" class="button alt" value="Send" /></li>
                                 </ul>
                             </div>
                         </div>
